@@ -1,13 +1,12 @@
-import { query } from '@angular/animations';
 import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class NavbarComponent implements OnInit {
 
   isSticky: boolean = false;
 
@@ -28,7 +27,5 @@ export class HeaderComponent implements OnInit {
     
   
   }
-
-  
 
 }

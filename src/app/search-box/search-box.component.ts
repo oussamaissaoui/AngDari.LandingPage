@@ -58,7 +58,7 @@ export class SearchBoxComponent implements OnInit {
       RegionField:new FormControl(),
       range:new FormControl(),
       Region:new FormControl(),
-      RoomsNumber: new FormControl(2, Validators.min(0))
+      RoomsNumber: new FormControl(Validators.min(0))
       
     });
 

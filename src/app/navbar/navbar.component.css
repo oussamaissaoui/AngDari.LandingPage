@@ -1,0 +1,39 @@
+
+
+.header {
+    z-index: 2;
+    height: 75px;
+    width: 100%;
+    background:transparent;
+  }
+  
+  .secondToolbar {
+    position: fixed;
+    z-index: 30;
+    background: #cacaca;
+    top: 0;
+    height: 0;
+    opacity: 0;
+    transition: opacity 0.25s ease-out, height 0.15s ease;
+    cursor: default;
+    user-select: none;
+  }
+  
+  .sticky {
+    height: 75px;
+    opacity: 100%;
+    transition: opacity 0.25s ease-out, height 0.15s ease;
+  }
+
+  .logoPart2{
+
+    color: #00d8ff ;
+    line-height: 80px;
+ 
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  float: left;
+
+  }

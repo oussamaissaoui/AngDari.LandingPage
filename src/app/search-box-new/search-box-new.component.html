@@ -1,0 +1,86 @@
+
+      
+
+
+
+
+
+
+
+
+<div class="container">
+    <div class="box">
+       
+        <mat-tab-group animationDuration="500ms" >
+     
+            <mat-tab label="Sell" class="grp">
+                <div class="form">
+                    <h2>Search for an Ad</h2>
+                    <form>
+                        <div class="inputBox">
+                            <mat-form-field appearance="fill">
+                                <mat-label class="surf">Region</mat-label> 
+                                <mat-select formControlName="Region"  panelClass="my-select-panel">
+                                  <mat-option class="paneloption" *ngFor="let region of regions" [value]="region.value">
+                                    {{region.viewValue}}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                        </div>
+                        <div class="inputBox">
+                            <mat-form-field appearance="fill">
+        
+                                <mat-label class="surf">Rooms Number</mat-label>
+                            
+                                <input matInput type="number" class="example-right-align" formControlName="RoomsNumber" min="1" max="20">
+                                
+                                
+                                <mat-error>Min Number: 1</mat-error>
+                                
+                              </mat-form-field>
+                        </div>
+                        <div class="inputBox">
+                            <mat-form-field appearance="fill">
+                            
+                                <mat-label class="surf">Surface</mat-label>
+                                <input matInput type="number" class="example-right-align" formControlName="Surface" min="20" max="20000">
+                                
+                                <span matSuffix class="surf">/m²</span>
+                                <mat-error>Min Surface: 20m²</mat-error>
+                                
+                              </mat-form-field>
+                        </div>
+                        
+                        <div class="inputBoxRow">
+                            <mat-label class="n5Span">Price</mat-label>  
+                      <ng5-slider style="margin-top:55px" [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ng5-slider>
+                        </div>
+                        
+                        <div class="inputBox">
+                            
+                            <input type="submit" placeholder="Region" value="SEARCH">
+                        </div>
+                    </form>
+                </div>
+                
+                
+               
+            </mat-tab>
+            
+            
+            <mat-tab label="Rent">Content 2</mat-tab>
+            
+            
+            <mat-tab label="Furniture">Content 3</mat-tab>
+          
+        </mat-tab-group>
+    
+   
+    
+    </div>
+    
+</div>
+    
+    
+    
+    
